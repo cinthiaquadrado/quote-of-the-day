@@ -17,7 +17,7 @@ function randomQuote(){
 }
 
 soundBtn.addEventListener("click", () => {
-	let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} by ${authorName.innerText}`);
+	let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} ${authorName.innerText}`);
 	speechSynthesis.speak(utterance);
 });
 
